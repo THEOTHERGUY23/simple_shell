@@ -10,10 +10,12 @@ int main(int ac, char **av)
 {
 	int e = 0;
 
-	while (av[e] != 0)
+	printf("ac = %d\n", ac);
+	printf("av content is av[]\n");
+
+	for (e = 0; av[e] != 0; e++)
 	{
-		printf("%d:%s\n", e, av[e]);
-		e++;
+		printf("%s\n", av[e]);
 	}
 
 	return (0);
