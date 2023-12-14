@@ -8,14 +8,13 @@
  */
 int main(int ac, char **av)
 {
-	int e = 0;
+	int e;
 
-	printf("ac = %d\n", ac);
-	printf("av content is av[]\n");
+	printf("av[]\n");
 
-	for (e = 0; av[e] != 0; e++)
+	for (e = 0; av[e] != NULL; e++)
 	{
-		printf("%s\n", av[e]);
+		printf("av = %s\n", av[e]);
 	}
 
 	return (0);
